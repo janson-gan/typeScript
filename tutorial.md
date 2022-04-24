@@ -26,22 +26,78 @@
     </ol>
   </div>
    <h2>Type Basics</h2>
+  <h3>String | Number | Boolean</h3>
    <div>
      <p>
        The different between typescript and javascript is typescript uses strict types which javascript does not. For example we declare a variable with a string in typescript like the example below, and the variable will always be a string, we can't change it to a number or boolean or other data type else there wil be type error, we are only allow to change the string to other text.<br>
-       <pre>
+      <pre>
         let character = "Max";
         character = 50; //not allow
         character = true; // not allow
         character = "Volt"; // allow
        </pre>
+     <pre>
+        let age = 50;
+        age = "Lucy"; //not allow
+        age = false; // not allow
+        age = 90; // allow
+       </pre>
       <div>
+       <pre>
+        let isHungry = true;
+        isHungry = 50; //not allow
+        isHungry = "true"; // not allow
+        isHungry = false; // allow
+       </pre>
         <figure>
           <img src="https://github.com/janson-gan/typeScript/blob/main/snippets/typeBasic.png" width="500" />
         </figure>
      </div>
-     *  This concept apply to all other data types like number, boolean. If declare variable as number or boolean then we are not allow to change to other type.
+     *  This concept apply to all other data types like number, boolean. If declare variable as number or boolean then we are not allow to change to other type, otherwise there will be type error.
      </P>
   </div>
+  <h3>Array</h3>
+  <div>
+    <p>
+      <pre>
+        let user = ["Max", "Volt", "Lucy", "Sammy"];
+        //add to array
+        user.push("Leon"); //allow
+        user.push(20); //not allow
+        user.push(true) //not allow
+        //change element
+        user[0] = 50; //not allow
+        user[1] = true; //not allow
+        user[2] = "Bunny"; allow
+      </pre>
+    </p>
+  <ul>
+    <li>If initial declare array as string, then we are not allow to change or add different type of element into it. This goes the same to other types of arrays like number or boolean. </li>
+  </ul>
+  <pre>
+    let numbers = [10, 20, 30];
+    numbers.push(40); //allow
+    numbers.push("50"); //not allow
+    numbers.push(true); //now allow
+  </pre>
+  <ul>
+    <li>If mixture of types are needed in the array we need to delcare in the initial stage.</li>
+  </ul>
+  <pre>
+    let mixture = ["Max", 20, true]; 
+    //All are allow
+    mixture.push(60);
+    mixture.push("Sammy");
+    mixture.push(true);
+    mixture[0] = false;
+    mixture[1] = "Volt";
+    mixture[2] = 15;
+  </pre>
+  <ul>
+    <li>If we state at the start that it will only have one type, then it will only contain that one type in it.</li>
+  </ul>
+  </div>
+  <h3>Object</h3>
+  
 </body>
 </html>
