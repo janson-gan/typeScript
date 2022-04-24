@@ -28,13 +28,19 @@
    <h2>Type Basics</h2>
    <div>
      <p>
-       The different between typescript and javascript is typescript uses strict types which javascript does not. For example we declare a variable with a string in typescript like the example below, and the variable will always be a string, we can't change it to a number or boolean or other data type else there wil be type error.<br>
+       The different between typescript and javascript is typescript uses strict types which javascript does not. For example we declare a variable with a string in typescript like the example below, and the variable will always be a string, we can't change it to a number or boolean or other data type else there wil be type error, we are only allow to change the string to other text.<br>
        <pre>
-       let character = "Max";
-character = 50;
-character = true;
-character = "Volt";
+        let character = "Max";
+        character = 50; //not allow
+        character = true; // not allow
+        character = "Volt"; // allow
        </pre>
+      <div>
+        <figure>
+          <img src="https://github.com/janson-gan/typeScript/blob/main/snippets/typeBasic.png" width="500" />
+        </figure>
+     </div>
+     *  This concept apply to all other data types like number, boolean. If declare variable as number or boolean then we are not allow to change to other type.
      </P>
   </div>
 </body>
