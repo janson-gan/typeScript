@@ -116,7 +116,20 @@
     <ul>
     <li>We can't add on extra properties inside object either once the initial number of properties are being declare in the object.</li>
   </ul>
+  <figure>
+    <img src="https://github.com/janson-gan/typeScript/blob/main/snippets/objectType1.png" width="500"/>
+  </figure>
+   <ul>
+    <li>But we are allow to overwrite the whole object into a new object, provided the number of properties inside the new object must match the old one.</li>
+  </ul>
   <pre>
+    character = {
+    name: "Volt", //allow
+    color: "blue", //allow
+    age: 12, //allow
+    power: "Slash Sabre" //not allow as doesn't match the same number of properties as before.
+   }
+  </pre>
   </p>
   </div>
 </body>
