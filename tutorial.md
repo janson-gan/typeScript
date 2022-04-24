@@ -25,5 +25,17 @@
       <li>To save the hassel of keep typing 'tsc app.ts' to compile the file, we can type 'tsc app.ts -w' to set auto compile. '-w' means watch mode.</li>
     </ol>
   </div>
+   <h2>Type Basics</h2>
+   <div>
+     <p>
+       The different between typescript and javascript is typescript uses strict types which javascript does not. For example we declare a variable with a string in typescript like the example below, and the variable will always be a string, we can't change it to a number or boolean or other data type else there wil be type error.<br>
+       <pre>
+       let character = "Max";
+character = 50;
+character = true;
+character = "Volt";
+       </pre>
+     </P>
+  </div>
 </body>
 </html>
