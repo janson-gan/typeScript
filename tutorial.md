@@ -98,6 +98,22 @@
   </ul>
   </div>
   <h3>Object</h3>
-  
+  <div>
+  <p>
+    <pre>
+      let character = {
+        name: "Max",
+        color: "Red",
+        age: 10
+      };
+    </pre>
+  <ul>
+    <li>Propertie inside object work the same way as variables if declare as a string, number or boolean, we can't change that type.</li>
+  </ul>
+  <figure>
+    <img src="" width="500"/>
+  </figure>
+  </p>
+  </div>
 </body>
 </html>
