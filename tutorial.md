@@ -108,11 +108,15 @@
       };
     </pre>
   <ul>
-    <li>Propertie inside object work the same way as variables if declare as a string, number or boolean, we can't change that type.</li>
+    <li>Properties inside object work the same way as variables, if declare as string, number or boolean, we can't change that type.</li>
   </ul>
   <figure>
-    <img src="" width="500"/>
+    <img src="https://github.com/janson-gan/typeScript/blob/main/snippets/objectType.png" width="500"/>
   </figure>
+    <ul>
+    <li>We can't add on extra properties inside object either once the initial number of properties are being declare in the object.</li>
+  </ul>
+  <pre>
   </p>
   </div>
 </body>
